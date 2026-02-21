@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circuits VTT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1f6feb;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 16px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .openrunner {
+      background: #ff6b00;
+      color: white;
+    }
+
+    .garmin {
+      background: #0ea5e9;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (min-width: 640px) {
+      h1 { font-size: 2.2rem; }
+      .card h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚵 Circuits Gourdonnaise Verte 2026 VTT</h1>
+  <div class="subtitle">Les circuits sont disponibles sur Openrunner et Garmin Connect</div>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>GV 55KM</h2>
+    <div class="links">
+      <a class="btn openrunner" href="https://www.openrunner.com/route-details/22867837" target="_blank">Voir sur Openrunner</a>
+      <a class="btn garmin" href="https://connect.garmin.com/app/course/433867265" target="_blank">Voir sur Garmin</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>GV 45KM</h2>
+    <div class="links">
+      <a class="btn openrunner" href="https://www.openrunner.com/route-details/22868691" target="_blank">Voir sur Openrunner</a>
+      <a class="btn garmin" href="https://connect.garmin.com/app/course/433867115" target="_blank">Voir sur Garmin</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>GV 33KM</h2>
+    <div class="links">
+      <a class="btn openrunner" href="https://www.openrunner.com/route-details/22890335" target="_blank">Voir sur Openrunner</a>
+      <a class="btn garmin" href="https://connect.garmin.com/app/course/433866968" target="_blank">Voir sur Garmin</a>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
